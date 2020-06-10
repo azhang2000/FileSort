@@ -1,0 +1,10 @@
+Testplan.txt
+By: Allen Zhang and Aryan Shah
+
+We tested each component of the fileSort method individually, and as a whole. The individual components tested were the read function, the insertion sort, the quick sort, and the data comparator function. Once these modules were tested on their own, we tested the entire main menthod. 
+
+For the read method, We tested an empty file, a file of a few hundred bits, and a file with tens of thousands of bytes. We wanted to make sure the read function did not miss any bytes, and that reallocating the size of the buffer when it was full did not lead to memory loss. Also, the read function was tested to insure it ignored non-numeric and non-alphabetic characters. We tested words, numbers, words with junk characters in-between, only junk characters, and empty spaces. 
+
+For the insertion sort and quick sort methods, we tested lists of size 0, lists of size 1, small lists with elements not in sorted order, and very large lists with thousands of words. We wanted to test for segmentation faults or errors in our logic.
+
+For the comparator method, we tested numbers vs numbers and words vs words. For comparing words, we tested identical words of different length, i.e. apples vs apple, run vs running. The shorter word should appear first, and we didn't want to run into any segmentation faults.
